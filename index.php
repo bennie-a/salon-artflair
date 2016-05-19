@@ -133,13 +133,20 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 						<jdoc:include type="modules" name="position-3" />
 					</article>
 					<article>
-						<jdoc:include type="modules" name="position-4" />
+						<h2><img src="images\artflair\h2_feature.png" alt="オススメ商品"></h2>
+						<jdoc:include type="message" />
+						<jdoc:include type="component" />
 					</article>
 					<article>
-
+						<h2><img src="images/artflair/h2_whatsnew.png" alt="What's New"></h2>
+						<jdoc:include type="modules" name="position-7" />
 					</article>
 					<article>
-
+						<p>
+							極力、体に安全で、髪・頭皮に良いものを提供し、
+自然派ヘアーサロンとしてお客様をお迎えできるよう心掛けております。
+						</p>
+						<a href="index.php?option=com_content&view=category&layout=blog&id=26">初めての方はこちらから</a>
 					</article>
 					<div id="<?php echo $showRightColumn ? 'wrapper' : 'wrapper2'; ?>" <?php if (isset($showno)){echo 'class="shownocolumns"';}?>>
 						<div id="main">
@@ -149,9 +156,6 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 									<jdoc:include type="modules" name="position-12" />
 								</div>
 							<?php endif; ?> -->
-
-							<jdoc:include type="message" />
-							<jdoc:include type="component" />
 
 						</div><!-- end main -->
 					</div><!-- end wrapper -->
