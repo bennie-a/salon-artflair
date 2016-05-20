@@ -164,13 +164,17 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 					<div id="footer-outer">
 						<?php if ($showbottom) : ?>
 							<div id="footer-inner" >
-
-								<div id="bottom">
-									<div class="box box1"> <jdoc:include type="modules" name="position-9" style="beezDivision" headerlevel="3" /></div>
-									<div class="box box2"> <jdoc:include type="modules" name="position-10" style="beezDivision" headerlevel="3" /></div>
-									<div class="box box3"> <jdoc:include type="modules" name="position-11" style="beezDivision" headerlevel="3" /></div>
-								</div>
-
+								<ul id="bottom">
+									<li>
+										<jdoc:include type="modules" name="position-9" style="beezDivision" headerlevel="3" />
+									</li>
+									<li>
+										<jdoc:include type="modules" name="position-10" style="beezDivision" headerlevel="3" />
+									</li>
+									<li>
+										<jdoc:include type="modules" name="position-11" style="beezDivision" headerlevel="3" />
+									</li>
+								</ul>
 							</div>
 						<?php endif; ?>
 
