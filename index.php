@@ -125,41 +125,30 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 					</div> <!-- end line -->
 				</header><!-- end header -->
 				<main id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
-					<article id="info">
+					<article id="info" class="center-column">
 						<!-- <jdoc:include type="modules" name="position-2" /> -->
 横浜市西区、桜木町駅降りてすぐにある美容・理容・ヘアエステサロン「アートフレア」。自然素材を使った薬剤。個室やプライベートスペースのある店内。お客様のお気持ちとお体に、なるべく負担のかからないよう心掛けた自然派ヘアーサロンとして、トータルに美を追求するサロンです。お顔剃りやブライダルヘアエステも行っておりますので、お気軽にご利用ください。
 					</article>
-					<article>
+					<article class="one-column center-column separate">
 						<jdoc:include type="modules" name="position-3" />
 					</article>
-					<article>
+					<article class="one-column reverse_color separate">
 						<h2><img src="images\artflair\h2_feature.png" alt="オススメ商品"></h2>
-						<jdoc:include type="message" />
 						<jdoc:include type="component" />
 					</article>
-					<article>
-						<h2><img src="images/artflair/h2_whatsnew.png" alt="What's New"></h2>
-						<jdoc:include type="modules" name="position-7" />
-					</article>
-					<article>
-						<p>
-							極力、体に安全で、髪・頭皮に良いものを提供し、
-自然派ヘアーサロンとしてお客様をお迎えできるよう心掛けております。
-						</p>
-						<a href="index.php?option=com_content&view=category&layout=blog&id=26">初めての方はこちらから</a>
-					</article>
-					<div id="<?php echo $showRightColumn ? 'wrapper' : 'wrapper2'; ?>" <?php if (isset($showno)){echo 'class="shownocolumns"';}?>>
-						<div id="main">
-
-							<!-- <?php if ($this->countModules('position-12')) : ?>
-								<div id="top">
-									<jdoc:include type="modules" name="position-12" />
-								</div>
-							<?php endif; ?> -->
-
-						</div><!-- end main -->
-					</div><!-- end wrapper -->
-
+					<div class="two-column">
+						<article class="separate">
+							<h2><img src="images/artflair/h2_whatsnew.png" alt="What's New"></h2>
+							<jdoc:include type="modules" name="position-7" />
+						</article>
+						<article>
+							<p>
+								極力、体に安全で、髪・頭皮に良いものを提供し、
+	自然派ヘアーサロンとしてお客様をお迎えできるよう心掛けております。
+							</p>
+							<a href="index.php?option=com_content&view=category&layout=blog&id=26">初めての方はこちらから</a>
+						</article>
+					</div>
 					<?php if ($navposition == 'center' and $showleft) : ?>
 						<nav class="left <?php if ($showRightColumn == null) { echo 'leftbigger'; } ?>" id="nav" >
 
@@ -169,8 +158,9 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 
 						</nav><!-- end navi -->
 					<?php endif; ?>
-
-					<div class="wrap"></div>
+					<div id="footer-image">
+						<jdoc:include type="modules" name="position-5"/>
+					</div>
 					<div id="footer-outer">
 						<?php if ($showbottom) : ?>
 							<div id="footer-inner" >
@@ -186,6 +176,7 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 
 						<div id="footer-sub">
 							<footer id="footer">
+								<jdoc:include type="modules" name="position-12" />
 								<jdoc:include type="modules" name="position-14" />
 							</footer><!-- end footer -->
 						</div>

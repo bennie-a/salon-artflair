@@ -13,13 +13,71 @@ h2 a {
 td, p {
 	font-family:'meiryo','メイリオ','ms pgothic','ms pゴシック',osaka,sans-serif;
 }
-h2,.moduletable h3, .items-leading h2 {
+.moduletable h3, .items-leading h2 {
 	border-bottom: solid 1px #ddd;
+}
+
+#back {
+	background-color: #f7f7f7;
 }
 
 .items-row h2 {
 	border-top: solid 1px #ddd;
 	border-bottom: solid 1px #ddd;
+}
+
+article.center-column {
+	width: 700px;
+	margin: 0 auto;
+}
+
+article.one-column {
+	margin-top: 80px;
+}
+
+article.one-column h2{
+	text-align: center;
+}
+
+article > table {
+	margin-bottom: 0;	
+}
+
+.reverse_color {
+	background-color: #f6f1f4;
+}
+
+.two-column {
+	display: flex;
+}
+
+.two-column > article {
+	width: 450px;
+	box-sizing: border-box;
+}
+
+.two-column > article:first-of-type {
+	padding:30px;
+	text-align: center;
+}
+
+.two-column > article:last-of-type {
+	background: #d3c091 url('../images/bg_styling.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 20px;
+	min-height: 329px;
+}
+
+#footer-image {
+	text-align: center;
+}
+
+article.separate h2{
+	padding-top: 60px;
+	background: url('../images/separate.svg') no-repeat top center;
+	-webkit-background-size: 60px;
+	background-size: 60px;
 }
 
 a:link,a:visited {
@@ -184,9 +242,6 @@ p.readmore a:hover,
   color: #fff ;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
   -webkit-font-smoothing: antialiased;
-
-
-
 }
 
 /* +++++++++++++++++  Pagination +++++++++++++++ */
