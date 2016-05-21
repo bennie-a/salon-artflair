@@ -10,16 +10,74 @@ h2 a {
 	text-decoration: none
 }
 
-td, p {
+td, p, #footer {
 	font-family:'meiryo','メイリオ','ms pgothic','ms pゴシック',osaka,sans-serif;
 }
-h2,.moduletable h3, .items-leading h2 {
+.moduletable h3, .items-leading h2 {
 	border-bottom: solid 1px #ddd;
+}
+
+#back {
+	background-color: #f7f7f7;
 }
 
 .items-row h2 {
 	border-top: solid 1px #ddd;
 	border-bottom: solid 1px #ddd;
+}
+
+article.center-column {
+	width: 700px;
+	margin: 0 auto;
+}
+
+article.one-column {
+	padding-top: 50px;
+}
+
+article.one-column h2{
+	text-align: center;
+}
+
+article > table {
+	margin-bottom: 0;
+}
+
+.reverse_color {
+	background-color: #f6f1f4;
+}
+
+.two-column {
+	display: flex;
+}
+
+.two-column > article {
+	width: 450px;
+	box-sizing: border-box;
+}
+
+.two-column > article:first-of-type {
+	padding:30px;
+	text-align: center;
+}
+
+.two-column > article:last-of-type {
+	background: #d3c091 url('../images/bg_styling.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 20px;
+	min-height: 329px;
+}
+
+#footer-image {
+	text-align: center;
+}
+
+article.separate h2{
+	padding-top: 60px;
+	background: url('../images/separate.svg') no-repeat top center;
+	-webkit-background-size: 60px;
+	background-size: 60px;
 }
 
 a:link,a:visited {
@@ -184,9 +242,6 @@ p.readmore a:hover,
   color: #fff ;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
   -webkit-font-smoothing: antialiased;
-
-
-
 }
 
 /* +++++++++++++++++  Pagination +++++++++++++++ */
@@ -241,10 +296,13 @@ ul.menu a:link,ul.menu a:visited {
 	box-shadow: 0 4px 4px rgba(136, 110, 68, 0.7);
 }
 
-#header ul.menu a {
+ul.menu a {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+#header ul.menu a,  {
 	box-shadow: none;
 	border-bottom: 0;
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size: 1.3em;
 }
 
@@ -268,9 +326,6 @@ ul.menu  li.active ul li a,ul.menu  li.active ul li.active  ul li a,ul.menu  li.
 }
 
 ul.menu a {
-	box-shadow: 0 1px 0 #fff;
-	border-bottom: solid 1px #ddd;
-	text-shadow: 0 1px 0 #fff
 }
 
 ul.menu ul a {
@@ -338,16 +393,15 @@ ul.tabs li a.linkclosed:hover,ul.tabs li a.linkclosed:active,ul.tabs li a.linkcl
 }
 
 #footer-inner,#footer {
-	background: #f5f5f5;
 	box-shadow: 0px 20px 10px #555
 }
 
 #footer {
-	background: #555;
-	max-width: 1025px;
+	background: #6e6255;
+	width: 900px;
 	margin: 0 auto;
-	box-shadow: 0px 0px 10px #555555;
-	color: #fff
+	color: #fff;
+	box-sizing: border-box;
 }
 
 #footer a {
@@ -355,16 +409,60 @@ ul.tabs li a.linkclosed:hover,ul.tabs li a.linkclosed:active,ul.tabs li a.linkcl
 	background: none
 }
 
+#footer > div {
+	width: 95%;
+	margin:0 auto;
+}
+
+#footer .custom, #footer ul {
+	width: 80%;
+}
+
+#footer .custom {
+	display: flex;
+	padding-bottom: 10px;
+}
+
+#footer .shop_info {
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 35px;
+	box-sizing: border-box;
+}
+
+#footer .shop_info dl {
+	width: 45%;
+}
+
+#footer .shop_info dl > * {
+	float: left;
+	margin-bottom: 5px;
+}
+
+#footer .shop_info dl > dt {
+	clear: left;
+}
+
+#footer .contact dt:first-child,#footer .contact dd:first-of-type {
+	font-size: 1.5em;
+}
+
+#footer .contact dt:after{
+	content: ':';
+}
+
+#footer .cal dt:after{
+	content: '/';
+}
+
+#footer ul {
+	margin: 0 auto;
+}
+
 #bottom a {
 	background: none
-}
-
-.box1 {
-	border-right: solid 1px #ccc
-}
-
-.box3 {
-	border-left: solid 1px #ccc
 }
 
 #bottom  ul li a {

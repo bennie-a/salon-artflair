@@ -155,9 +155,7 @@ body {
 }
 
 #info {
-  width: 700px;
   background-color: #ebe8bb;
-  margin: 0 auto;
   padding: 30px;
   box-sizing: border-box;
   font-family:
@@ -470,14 +468,28 @@ body {
 /* ++++++++++++++  footer  ++++++++++++++ */
 
 #bottom {
-    overflow: hidden
+    overflow: hidden;
+    width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+#bottom li {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+#bottom li img {
+  box-shadow: 0 2px 3px rgba(150, 146, 139, 0.8);
 }
 
 .box {
-    width: 27%;
     float: left;
     margin-right: 10px;
-    min-height: 100px
+    width:30%;
+    margin-left: 10px;
 }
 
 .box1 {
@@ -496,7 +508,7 @@ body {
     max-width: 1025px;
     margin: 0 auto;
 
-    padding: 10px 15px 10px 10px;
+    padding: 20px 15px 10px 10px;
 }
 
 img {
