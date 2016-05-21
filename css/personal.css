@@ -10,7 +10,7 @@ h2 a {
 	text-decoration: none
 }
 
-td, p {
+td, p, #footer {
 	font-family:'meiryo','メイリオ','ms pgothic','ms pゴシック',osaka,sans-serif;
 }
 .moduletable h3, .items-leading h2 {
@@ -416,6 +416,45 @@ ul.tabs li a.linkclosed:hover,ul.tabs li a.linkclosed:active,ul.tabs li a.linkcl
 
 #footer .custom, #footer ul {
 	width: 80%;
+}
+
+#footer .custom {
+	display: flex;
+	padding-bottom: 20px;
+}
+
+#footer .shop_info {
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 35px;
+	box-sizing: border-box;
+}
+
+#footer .shop_info dl {
+	width: 45%;
+}
+
+#footer .shop_info dl > * {
+	float: left;
+	margin-bottom: 5px;
+}
+
+#footer .shop_info dl > dt {
+	clear: left;
+}
+
+#footer .contact dt:first-child,#footer .contact dd:first-of-type {
+	font-size: 1.5em;
+}
+
+#footer .contact dt:after{
+	content: ':';
+}
+
+#footer .cal dt:after{
+	content: '/';
 }
 
 #footer ul {

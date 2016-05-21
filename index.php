@@ -177,8 +177,7 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 								</ul>
 							</div>
 						<?php endif; ?>
-
-						<div id="footer-sub">
+				<div id="footer-sub">
 							<footer id="footer">
 								<jdoc:include type="modules" name="position-12" />
 								<div>
