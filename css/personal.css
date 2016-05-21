@@ -296,10 +296,13 @@ ul.menu a:link,ul.menu a:visited {
 	box-shadow: 0 4px 4px rgba(136, 110, 68, 0.7);
 }
 
-#header ul.menu a {
+ul.menu a {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+#header ul.menu a,  {
 	box-shadow: none;
 	border-bottom: 0;
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size: 1.3em;
 }
 
@@ -323,9 +326,6 @@ ul.menu  li.active ul li a,ul.menu  li.active ul li.active  ul li a,ul.menu  li.
 }
 
 ul.menu a {
-	box-shadow: 0 1px 0 #fff;
-	border-bottom: solid 1px #ddd;
-	text-shadow: 0 1px 0 #fff
 }
 
 ul.menu ul a {
@@ -398,15 +398,28 @@ ul.tabs li a.linkclosed:hover,ul.tabs li a.linkclosed:active,ul.tabs li a.linkcl
 
 #footer {
 	background: #6e6255;
-	max-width: 1025px;
+	width: 900px;
 	margin: 0 auto;
-	/*box-shadow: 0px 0px 10px #555555;*/
-	color: #fff
+	color: #fff;
+	box-sizing: border-box;
 }
 
 #footer a {
 	color: #fff;
 	background: none
+}
+
+#footer > div {
+	width: 95%;
+	margin:0 auto;
+}
+
+#footer .custom, #footer ul {
+	width: 80%;
+}
+
+#footer ul {
+	margin: 0 auto;
 }
 
 #bottom a {

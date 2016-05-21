@@ -181,7 +181,9 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 						<div id="footer-sub">
 							<footer id="footer">
 								<jdoc:include type="modules" name="position-12" />
-								<jdoc:include type="modules" name="position-14" />
+								<div>
+									<jdoc:include type="modules" name="position-14" />
+								</div>
 							</footer><!-- end footer -->
 						</div>
 					</div>

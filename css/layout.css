@@ -775,6 +775,9 @@ ul.actions  li {
 ul.menu {
 	margin: 0 0 20px 0;
 	padding: 0;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
 }
 
 ul.menu,ul.menu ul {
@@ -787,7 +790,6 @@ ul.menu a {
 	text-decoration: none;
 	padding: 5px 0px;
 	min-width: 120px;
-	border-bottom: solid 1px #ddd;
 	text-align: center;
 }
 
@@ -893,8 +895,18 @@ ul.latestnews li {
 	font-size: 1.3em
 }
 
-#footer {
-	font-size: 0.8em
+#footer ul.menu a {
+	font-size: 1.3em;
+}
+
+#footer > div:last-of-type {
+	border-top: 1px solid #eee;
+	box-shadow: 0px -1px #555;
+}
+
+#footer ul li {
+	padding-top: 7px;
+	min-width: 140px;
 }
 
 /*  ####################   Sliding modules  ################## */
