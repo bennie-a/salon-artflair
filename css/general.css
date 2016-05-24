@@ -452,7 +452,7 @@ body .nav-pills > li > a {
     line-height: 1.5em;
 }
 body a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 body input[type="text"].search-query {
     line-height: 1.5em;

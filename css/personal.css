@@ -10,7 +10,7 @@ h2 a {
 	text-decoration: none
 }
 
-td, p, #footer {
+td, p, a, #footer {
 	font-family:'meiryo','メイリオ','ms pgothic','ms pゴシック',osaka,sans-serif;
 }
 .moduletable h3, .items-leading h2 {
@@ -81,7 +81,7 @@ article.separate h2{
 }
 
 a:link,a:visited {
-	color: #095197
+	color:#444;
 }
 
 a:hover,a:active,a:focus {
@@ -150,6 +150,22 @@ a:hover,a:active,a:focus {
 	margin: 0 0 0;
 	padding: 12px 15px;
 	position: relative;
+}
+
+ul.latestnews {
+	text-align: left;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul.latestnews li:before {
+	content: '■';
+	font-size: 1.6em;
+}
+
+ul.latestnews li {
+	padding-top: 20px;
 }
 
 /*  grey background */

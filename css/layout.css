@@ -29,7 +29,6 @@ body h1 {
 }
 
 body h2 {
-	margin-bottom: 0.75em;
 	font-size: 1.5em;
 	line-height: 1.2;
 	padding: 5px 0
@@ -88,8 +87,6 @@ blockquote {
 q {
 	quotes: none;
 }
-
-
 
 cite {
 	font-style: normal;
@@ -866,6 +863,13 @@ ul.menu ul ul ul ul a {
 
 ul.latestnews li {
 	word-wrap: break-word;
+	border-bottom: 1px dashed #444;
+}
+
+ul.latestnews li a:hover,ul.latestnews li a:visited {
+	text-decoration: underline;
+	color:inherit;
+	background-color: inherit;
 }
 
 /* ++++++++++++++++++++++  Footer +++++++++++++++++++++++++ */
