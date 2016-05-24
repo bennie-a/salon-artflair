@@ -504,6 +504,31 @@ body {
     float: right
 }
 
+.product_contents {
+  margin: 0 auto;
+  width: 800px;
+  box-sizing: border-box;
+  padding: 30px 30px;
+}
+
+.product_contents > div {
+  width: 52%;
+}
+
+.product_contents h3 {
+  padding: 15px 0;
+}
+
+.product_contents h4 {
+  margin-bottom: 6px;
+}
+
+.product_contents p {
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+
 #footer-inner, #footer {
     max-width: 1025px;
     margin: 0 auto;

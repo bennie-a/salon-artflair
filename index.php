@@ -132,7 +132,7 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 					<article class="one-column center-column separate">
 						<jdoc:include type="modules" name="position-3" />
 					</article>
-					<article class="one-column reverse_color separate">
+					<article class="one-column reverse_color separate main_contents">
 						<h2><img src="images\artflair\h2_feature.png" alt="オススメ商品"></h2>
 						<jdoc:include type="component" />
 					</article>

@@ -33,6 +33,7 @@ article.center-column {
 
 article.one-column {
 	padding-top: 50px;
+	padding-bottom: 80px;
 }
 
 article.one-column h2{
@@ -78,6 +79,7 @@ article.separate h2{
 	background: url('../images/separate.svg') no-repeat top center;
 	-webkit-background-size: 60px;
 	background-size: 60px;
+	margin-bottom: 20px;
 }
 
 a:link,a:visited {
@@ -312,7 +314,7 @@ ul.menu a:link,ul.menu a:visited {
 	box-shadow: 0 4px 4px rgba(136, 110, 68, 0.7);
 }
 
-ul.menu a {
+ul.menu a, .product_contents h3{
 	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
