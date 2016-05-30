@@ -729,12 +729,13 @@ ul.actions  li {
 	padding: 0;
 	width: 900px;
 	text-align: center;
+	letter-spacing: -.40em;
 }
 
 #header ul.menu li {
 	display: inline-block;
+	letter-spacing: normal;
 	padding: 0;
-	margin: 0;
 }
 
 #header ul.menu li a:link,#header ul.menu li a:visited,#header ul.menu li:last-child a
@@ -745,8 +746,11 @@ ul.actions  li {
 	margin: 0;
 	display: inline-block;
 	margin: 0 0 0;
-	padding: 8px 15px;
+	padding: 11px 15px;
 	position: relative;
+}
+
+#header ul a {
 	border-right: 1px solid #b19263;
 }
 
@@ -757,7 +761,6 @@ ul.actions  li {
 #header ul.menu li:first-child a {
 	border-radius: 4px 0 0 0;
 	margin-left: -1px;
-	margin:3px;
 }
 
 .moduletable_menu {

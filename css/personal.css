@@ -1,3 +1,4 @@
+@charset "utf-8";
 body {
 	background: #eee;
 }
@@ -84,11 +85,6 @@ article.separate h2{
 
 a:link,a:visited {
 	color:#444;
-}
-
-a:hover,a:active,a:focus {
-	background: #095197;
-	color: #FFF;
 }
 
 .logoheader {
@@ -228,9 +224,6 @@ tr.odd,tr.cat-list-row1 {
 .button:focus,
 button:hover,
 p.readmore a:hover,
-#header ul.menu a:hover,
-#header ul.menu a:active,
-#header ul.menu a:focus,
 .pagenav a:hover,
 .pagenav a:active,
 .pagenav a:focus,
@@ -260,6 +253,13 @@ p.readmore a:hover,
   color: #fff ;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
   -webkit-font-smoothing: antialiased;
+}
+
+#header ul.menu a:hover,
+#header ul.menu a:active,
+#header ul.menu a:focus {
+	background-color: #deb887;
+	background-image: none;
 }
 
 /* +++++++++++++++++  Pagination +++++++++++++++ */
