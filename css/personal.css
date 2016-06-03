@@ -51,6 +51,7 @@ article > table {
 
 .two-column {
 	display: flex;
+	width: 900px;
 }
 
 .two-column > article {
@@ -72,6 +73,7 @@ article > table {
 
 #footer-image {
 	text-align: center;
+	width: 900px;
 }
 
 article.separate h2{
@@ -501,53 +503,6 @@ border-radius:4px 4px 0 0;
 padding:6px;
 font-size:0.75em;
 margin-right:5px;
-}
-
-@media only screen and (max-width: 480px) {
-
-	img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-
-	#fontsize{display:none}
-	#nav,#wrapper2,#wrapper,.cols-3 .column-1,.cols-3 .column-2,.cols-3 .column-3,#right,.box,#header form
-		{
-		float: none;
-		width: 100%
-	}
-	#header {padding-top:3em}
-	#header form  {margin:0}
-	.logoheader {background:#0C1D43; min-height:100px; margin:0}
-	.box {
-		border-left: 0 !important;
-		border-bottom: solid 1px #ddd;
-	}
-	#line {
-		text-align: center;
-		top: 0;
-		right: auto;
-		max-width: 100% ;
-		min-width:100%;
-
-		margin: 0 0px; background:#095197;
-	}
-	#header form input {
-		float: none; margin-bottom:4px
-	}
-	#menuwrapper { margin-top:10px; }
-	#header ul.menu {position:relative; top:0;left:20px; right:20px; margin:0; width:90%; border-radius:4px}
-	#header ul.menu li:first-child a {border-radius: 4px 4px 0 0}
-	#header ul.menu li:last-child a {border-radius:0 0 4px 4px }
-	#header ul.menu li a:link,
-	#header ul.menu li a:visited {
-		display: block;
-		padding: 6px 10px;
-		border-bottom: solid 1px #ccc
-	}
 }
 
 .to_begginer p{
