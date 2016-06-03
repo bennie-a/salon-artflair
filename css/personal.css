@@ -82,6 +82,8 @@ article.separate h2{
 	-webkit-background-size: 60px;
 	background-size: 60px;
 	margin-bottom: 20px;
+	text-align: center;
+	font-size: 2.5em;
 }
 
 a:link,a:visited {
@@ -98,7 +100,9 @@ a:link,a:visited {
 }
 
 .logoheader .phone {
-	display: none;
+	display: block;
+	font-size: 29px;
+	margin-top: 5px;
 }
 .logoheader p {
 	margin-bottom: 0;
@@ -322,6 +326,10 @@ ul.menu a:link,ul.menu a:visited {
 
 ul.menu a, .product_contents h3{
 	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.product_contents h4 {
+	font-size: 1.6em;
 }
 
 #header ul.menu a,  {
