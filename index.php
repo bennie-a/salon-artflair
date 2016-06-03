@@ -138,15 +138,15 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 					</article>
 					<div class="two-column">
 						<article class="separate">
-							<h2><img src="images/artflair/h2_whatsnew.png" alt="What's New"></h2>
+							<h2 id="whatsnew"><img src="images/artflair/h2_whatsnew.png" alt="What's New"></h2>
 							<jdoc:include type="modules" name="position-7" />
 						</article>
-						<article>
+						<article class="to_begginer">
 							<p>
 								極力、体に安全で、髪・頭皮に良いものを提供し、
 	自然派ヘアーサロンとしてお客様をお迎えできるよう心掛けております。
 							</p>
-							<a href="index.php?option=com_content&view=category&layout=blog&id=26">初めての方はこちらから</a>
+							<a class="btn" href="index.php?option=com_content&view=category&layout=blog&id=26">初めての方はこちらから</a>
 						</article>
 					</div>
 					<?php if ($navposition == 'center' and $showleft) : ?>
