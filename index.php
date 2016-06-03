@@ -118,11 +118,6 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 					</ul>
 					<h2 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAV_VIEW_SEARCH'); ?></h2>
 					<h3 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAVIGATION'); ?></h3>
-					<div id="line">
-						<div id="fontsize"></div>
-						<h3 class="unseen"><?php echo JText::_('TPL_BEEZ3_SEARCH'); ?></h3>
-						<jdoc:include type="modules" name="position-0" />
-					</div> <!-- end line -->
 				</header><!-- end header -->
 				<main id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
 					<article id="info" class="center-column">
