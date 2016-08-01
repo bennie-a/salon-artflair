@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="3.1" type="template" client="site">
 	<name>artflair</name>
-	<creationDate>25 November 2009</creationDate>
-	<author>Angie Radtke</author>
+	<creationDate>3 June 2016</creationDate>
+	<author>Aiko.B</author>
 	<authorEmail>a.radtke@derauftritt.de</authorEmail>
 	<authorUrl>http://www.der-auftritt.de</authorUrl>
 	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>3.1.0</version>
-	<description>TPL_BEEZ3_XML_DESCRIPTION</description>
+	<version>3.5.0</version>
+	<description>Artflair美容室テンプレート</description>
 
 	<files>
 		<folder>css</folder>
