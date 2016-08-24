@@ -825,17 +825,13 @@ ul.menu ul ul ul ul a {
 	padding-left: 45px
 }
 
-table.character td{
-	text-align: center;
-}
-
-table.character h3{
+ul.character h3{
 	margin-bottom: 0.5em;
 	padding-bottom: 0;
 	font-size: 1.6em;
 }
 
-table.character p {
+ul.character p {
 	text-align: left;
 	width: 89%;
 	margin:0 auto;

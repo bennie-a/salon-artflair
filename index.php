@@ -75,7 +75,6 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 ?>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 	<head>
 		<?php require __DIR__ . '/jsstrings.php';?>
 
@@ -119,18 +118,8 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 					<h3 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAVIGATION'); ?></h3>
 				</header><!-- end header -->
 				<main id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
-					<article id="info" class="center-column">
-						<!-- <jdoc:include type="modules" name="position-2" /> -->
-横浜市西区、桜木町駅降りてすぐにある美容・理容・ヘアエステサロン「アートフレア」。自然素材を使った薬剤。個室やプライベートスペースのある店内。お客様のお気持ちとお体に、なるべく負担のかからないよう心掛けた自然派ヘアーサロンとして、トータルに美を追求するサロンです。お顔剃りやブライダルヘアエステも行っておりますので、お気軽にご利用ください。
-					</article>
-					<article class="one-column center-column separate">
-						<jdoc:include type="modules" name="position-3" />
-					</article>
-					<article class="one-column reverse_color separate main_contents">
-						<h2>オススメ商品</h2>
-						<jdoc:include type="component" />
-					</article>
-					<div class="two-column">
+					<jdoc:include type="component" />
+					<!-- <div class="two-column">
 						<article class="separate">
 							<h2 id="whatsnew"><img src="images/artflair/h2_whatsnew.png" alt="What's New"></h2>
 							<jdoc:include type="modules" name="position-7" />
@@ -142,7 +131,7 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 							</p>
 							<a class="btn" href="index.php?option=com_content&view=category&layout=blog&id=26">初めての方はこちらから</a>
 						</article>
-					</div>
+					</div> -->
 					<?php if ($navposition == 'center' and $showleft) : ?>
 						<nav class="left <?php if ($showRightColumn == null) { echo 'leftbigger'; } ?>" id="nav" >
 
