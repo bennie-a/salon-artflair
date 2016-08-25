@@ -561,6 +561,13 @@ form ul {
 	padding: 0
 }
 
+img.eyecatch {
+	width: 900px;
+	height: 486px;
+	max-width: initial;
+	z-index: 0;
+}
+
 /* +++++++++++++++++++++++ pagenav +++++++++++++++++++++++  */
 .pagenav {
 	text-align: right
@@ -650,7 +657,7 @@ form ul {
 /* +++++++++++++++++ Breadcrumbs  +++++++++++++++++++++++++++  */
 
 .breadcrumbs,.article-info {
-	padding: 7px;
+	padding: 7px 0px;
 	margin: 0 0 18px;
 	list-style: none;
 	-webkit-border-radius: 3px;
@@ -684,8 +691,7 @@ ul.actions  li {
 
 .article-info dd {
 	float: left;
-	padding: 0 5px;
-	border-right: solid 1px #ccc
+	padding: 5px;
 }
 
 .article-info dd span {
@@ -697,6 +703,10 @@ ul.actions  li {
 
 .article-info dd.create {
 	clear: left
+}
+
+article.info-article p {
+	min-height: 300px;
 }
 
 /* ######################  header   ###################### */
@@ -753,6 +763,7 @@ ul.actions  li {
 	margin: 0 0 0;
 	padding: 11px 15px;
 	position: relative;
+	font-size: 0.9rem;
 }
 
 #header ul a {
@@ -838,6 +849,11 @@ ul.character p {
 }
 
 /* ++++++++++++++  content-module ++++++++++++++ */
+article.item-page, section.blog, section.category-list {
+	margin-top: 150px;
+	width: 860px;
+}
+
 .category-module {
 	margin: 0;
 	padding: 0

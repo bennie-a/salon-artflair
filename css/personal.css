@@ -19,8 +19,17 @@ ul, ol {
   list-style: none;
 }
 
-.moduletable h3, .items-leading h2 {
-	border-bottom: solid 1px #ddd;
+.moduletable h3, .items-leading h2, article.info-article h2 {
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+}
+
+article.item h2 a, div.items-leading h2 a {
+	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+article.item h2 a:hover, div.items-leading h2 a:hover {
+	color:#aaa;
 }
 
 #back {
@@ -107,30 +116,28 @@ a:link,a:visited {
 	color:#444;
 }
 
-.logoheader {
-	background: url(../images/eyecatch.jpg) no-repeat center
-		bottom #0C1A3E;
-	-webkit-background-size: cover;
-	background-size: cover;
-	color: #2c2424;
-	min-height: 485px;
+#header-layout {
+	width: 900px;
+	position: absolute;
+	z-index: 1;
 }
 
-.logoheader .phone {
+#header-layout .phone {
 	display: block;
-	font-size: 29px;
+	font-size: 26px;
 	margin-top: 5px;
 }
-.logoheader p {
+
+#header-layout p {
 	margin-bottom: 0;
 	line-height: 1.2;
 }
 
-.logoheader h1 {
+#header h1 {
 	display: none;
 }
 
-.logoheader .reserve {
+#header-layout .reserve {
 	background-color: rgba(243, 158, 60, 0.8);
 	font-weight: bold;
 	padding: 1px 5px 1px 3px;
@@ -308,25 +315,6 @@ span.pagenav {
 }
 
 /* +++++++++++++++++  content  +++++++++++++++ */
-.article-info {
-	background-color: #fbfbfb;
-	background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
-	background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff),
-		to(#f5f5f5) );
-	background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
-	background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
-	background-image: linear-gradient(top, #ffffff, #f5f5f5);
-	background-repeat: repeat-x;
-	filter: progid :   DXImageTransform.Microsoft.gradient (   startColorstr
-		=
-		 '#ffffff', endColorstr =   '#f5f5f5', GradientType =   0 );
-	border: 1px solid #ddd;
-	-webkit-box-shadow: inset 0 1px 0 #ffffff;
-	-moz-box-shadow: inset 0 1px 0 #ffffff;
-	box-shadow: inset 0 1px 0 #ffffff;
-}
-
 ul.menu a:link,ul.menu a:visited {
 	color: #444;
 }

@@ -103,10 +103,8 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 		<div id="all">
 			<div id="back">
 				<header id="header">
-					<div class="logoheader">
 						<jdoc:include type="modules" name="position-1" />
 						<h1><?php echo htmlspecialchars($templateparams->get('sitetitle')); ?></h1>
-					</div><!-- end logoheader -->
 					<ul class="skiplinks">
 						<li><a href="#main" class="u2"><?php echo JText::_('TPL_BEEZ3_SKIP_TO_CONTENT'); ?></a></li>
 						<li><a href="#nav" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_NAV'); ?></a></li>
@@ -119,19 +117,6 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 				</header><!-- end header -->
 				<main id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
 					<jdoc:include type="component" />
-					<!-- <div class="two-column">
-						<article class="separate">
-							<h2 id="whatsnew"><img src="images/artflair/h2_whatsnew.png" alt="What's New"></h2>
-							<jdoc:include type="modules" name="position-7" />
-						</article>
-						<article class="to_begginer">
-							<p>
-								極力、体に安全で、髪・頭皮に良いものを提供し、
-	自然派ヘアーサロンとしてお客様をお迎えできるよう心掛けております。
-							</p>
-							<a class="btn" href="index.php?option=com_content&view=category&layout=blog&id=26">初めての方はこちらから</a>
-						</article>
-					</div> -->
 					<?php if ($navposition == 'center' and $showleft) : ?>
 						<nav class="left <?php if ($showRightColumn == null) { echo 'leftbigger'; } ?>" id="nav" >
 
