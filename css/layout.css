@@ -561,6 +561,13 @@ form ul {
 	padding: 0
 }
 
+img.eyecatch {
+	width: 900px;
+	height: 486px;
+	max-width: initial;
+	z-index: 0;
+}
+
 /* +++++++++++++++++++++++ pagenav +++++++++++++++++++++++  */
 .pagenav {
 	text-align: right
@@ -753,6 +760,7 @@ ul.actions  li {
 	margin: 0 0 0;
 	padding: 11px 15px;
 	position: relative;
+	font-size: 0.9rem;
 }
 
 #header ul a {

@@ -107,30 +107,28 @@ a:link,a:visited {
 	color:#444;
 }
 
-.logoheader {
-	background: url(../images/eyecatch.jpg) no-repeat center
-		bottom #0C1A3E;
-	-webkit-background-size: cover;
-	background-size: cover;
-	color: #2c2424;
-	min-height: 485px;
+#header-layout {
+	width: 900px;
+	position: absolute;
+	z-index: 1;
 }
 
-.logoheader .phone {
+#header-layout .phone {
 	display: block;
-	font-size: 29px;
+	font-size: 26px;
 	margin-top: 5px;
 }
-.logoheader p {
+
+#header-layout p {
 	margin-bottom: 0;
 	line-height: 1.2;
 }
 
-.logoheader h1 {
+#header h1 {
 	display: none;
 }
 
-.logoheader .reserve {
+#header-layout .reserve {
 	background-color: rgba(243, 158, 60, 0.8);
 	font-weight: bold;
 	padding: 1px 5px 1px 3px;
