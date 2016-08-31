@@ -72,9 +72,9 @@ body li ul,body li ol {
 	margin: 0;
 }
 
-article h2, article h3, .product_contents h4, .logoheader .phone {
+#info strong, article h2, article h3, .product_contents h4, .logoheader .phone {
 	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-	font-weight: bold;
+	font-weight: normal;
 	color:#222;
 }
 
@@ -742,7 +742,6 @@ article.info-article p {
 /* +++++++++++++++  menus ++++++++++++++++++++++++ */
 #header ul.menu {
 	padding: 0;
-	width: 900px;
 	text-align: center;
 	letter-spacing: -.40em;
 }
@@ -768,6 +767,7 @@ article.info-article p {
 
 #header ul a {
 	border-right: 1px solid #b19263;
+	min-width: 149px;
 }
 
 #header ul.menu li:first-child a {

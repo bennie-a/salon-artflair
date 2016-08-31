@@ -100,21 +100,21 @@ if (file_exists($userCss) && filesize($userCss) > 0)
 			</style>
 		<?php endif; ?>
 
+		<header id="header">
+				<jdoc:include type="modules" name="position-1" />
+				<h1><?php echo htmlspecialchars($templateparams->get('sitetitle')); ?></h1>
+			<ul class="skiplinks">
+				<li><a href="#main" class="u2"><?php echo JText::_('TPL_BEEZ3_SKIP_TO_CONTENT'); ?></a></li>
+				<li><a href="#nav" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_NAV'); ?></a></li>
+				<?php if ($showRightColumn) : ?>
+					<li><a href="#right" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_INFO'); ?></a></li>
+				<?php endif; ?>
+			</ul>
+			<h2 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAV_VIEW_SEARCH'); ?></h2>
+			<h3 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAVIGATION'); ?></h3>
+		</header><!-- end header -->
 		<div id="all">
 			<div id="back">
-				<header id="header">
-						<jdoc:include type="modules" name="position-1" />
-						<h1><?php echo htmlspecialchars($templateparams->get('sitetitle')); ?></h1>
-					<ul class="skiplinks">
-						<li><a href="#main" class="u2"><?php echo JText::_('TPL_BEEZ3_SKIP_TO_CONTENT'); ?></a></li>
-						<li><a href="#nav" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_NAV'); ?></a></li>
-						<?php if ($showRightColumn) : ?>
-							<li><a href="#right" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_INFO'); ?></a></li>
-						<?php endif; ?>
-					</ul>
-					<h2 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAV_VIEW_SEARCH'); ?></h2>
-					<h3 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAVIGATION'); ?></h3>
-				</header><!-- end header -->
 				<main id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
 					<jdoc:include type="component" />
 					<?php if ($navposition == 'center' and $showleft) : ?>
